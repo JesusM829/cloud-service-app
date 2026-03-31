@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Cloud Service</title>
+
+  <!-- ICONO -->
+  <link rel="icon" href="src/images/Imagen1.png" type="image/png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="verificarSesion()">
+
+<!-- 🔷 NAVBAR -->
+<header class="navbar">
+  <div class="nav-left">
+    <strong>Cloud Service</strong>
+  </div>
+
+  <div class="nav-right">
+    <a href="#">Dashboard</a>
+    <a href="#" onclick="logout()">Cerrar sesión</a>
+  </div>
+</header>
+
+<!-- 🔷 CONTENIDO PRINCIPAL -->
+<section class="dashboard">
+
+  <!-- BIENVENIDA -->
+  <div class="welcome-box">
+    <h1 id="userInfo">Bienvenido</h1>
+    <p>Gestiona tu cuenta y servicios desde aquí.</p>
+  </div>
+
+  <!-- 🔷 CARDS -->
+  <div class="dashboard-cards">
+
+    <div class="dashboard-card">
+      <h3>👤 Perfil</h3>
+      <p>Consulta y edita tu información personal.</p>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>🔐 Seguridad</h3>
+      <p>Configura tu contraseña y protección de cuenta.</p>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>📦 Servicios</h3>
+      <p>Administra tus servicios en la nube.</p>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>💳 Pagos</h3>
+      <p>Gestiona métodos de pago y facturación.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
